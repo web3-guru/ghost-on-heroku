@@ -1,0 +1,13 @@
+{{!-- The footer at the very bottom of the screen --}}
+<footer id="colophon" class="site-footer outer">
+	<div class="site-footer-inside">
+
+		{{!-- The tag below includes the social links list - partials/social-links.hbs --}}
+		{{> "social-links"}}
+
+		<p class="site-info"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}. {{{t "Footer" ghostlink="<a target=\"_blank\" href=\"https://ghost.org\" rel=\"noopener\">Ghost</a>"}}}</p>
+
+		<p class="back-to-top"><a id="top-button" class="top-button" href="#page"><span class="icon-arrow-up" aria-hidden="true"></span><span class="screen-reader-text">{{t "Back to top"}}</span></a></p>
+
+	</div><!-- .site-footer-inside -->
+</footer><!-- .site-footer -->

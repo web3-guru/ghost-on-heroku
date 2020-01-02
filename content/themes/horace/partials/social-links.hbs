@@ -1,0 +1,10 @@
+{{!-- Social links list --}}
+<p class="social-links">
+	{{#if @blog.facebook}}
+	<a href="{{facebook_url}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+	{{/if}}
+	{{#if @blog.twitter}}
+	<a href="{{twitter_url}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+	{{/if}}
+	<a href="https://github.com/YoonjaeYoo" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+</p><!-- .social-links -->

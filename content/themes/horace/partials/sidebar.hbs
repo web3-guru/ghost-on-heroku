@@ -1,0 +1,30 @@
+{{!-- The sidebar of the theme --}}
+<aside id="sidebar" class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="sidebar-inside">
+
+			<button id="sidebar-hide" class="sidebar-toggle"><span class="screen-reader-text">{{t "Close Sidebar"}}</span><span aria-hidden="true" class="icon-close"></span></button>
+
+			{{!-- Includes the site navigation for small screens - partials/navigation.hbs --}}
+			{{#if @blog.navigation}}
+			<nav id="sidebar-navigation" class="widget site-navigation">
+				<h2 class="widget-title">{{t "Explore Site"}}</h2>
+				{{navigation}}
+			</nav>
+			{{/if}}
+
+			{{!-- Includes the about widget - partials/widget-about.hbs --}}
+			{{> "widget-about"}}
+
+			{{!-- Includes the recent posts widget - partials/widget-recent.hbs --}}
+			{{> "widget-recent"}}
+
+			{{!-- Includes the tagcloud widget - partials/widget-tagcloud.hbs --}}
+			{{> "widget-tagcloud"}}
+
+			{{!-- Includes the newsletter widget - partials/widget-newsletter.hbs --}}
+			{{> "widget-newsletter"}}
+
+		</div><!-- .sidebar-inside -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
